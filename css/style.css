@@ -1,0 +1,239 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+nav{
+    height: 85px;
+    width: 100vw;
+    display: flex;
+   padding: 0 10.2489vw;
+   justify-content: space-between;
+   align-items: center;
+   position: fixed;
+   top: 0;
+   background-color: #F7F9FC;
+   box-shadow: 0 5px 10px black;
+   z-index: 1;
+
+}
+ nav img{
+    width: 170px;
+    
+}
+nav ul{
+    display: flex;
+    list-style: none;
+   gap: 30px;
+}
+ nav a{
+    text-decoration: none;
+    color: black;
+
+}
+nav .sign{
+  width: 145px; 
+    height: 40px;
+    background-color:   #27AE60;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    
+
+    
+}
+nav .menu{
+    background: none;
+    color: #27AE60;
+    border: 1px solid  #27AE60;
+    border-radius: 3px;
+    padding: 5px;
+display: none;
+}
+.hero{ text-align: center;
+    position: relative;
+   height: 100vh;
+   
+}
+.hero img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+   
+}
+
+.hero .info{
+  width: max-content;
+    position: absolute;
+    top:  50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    color: white;
+
+   
+
+}
+ .hero h1{
+
+    font-size: 3rem;
+    max-width: 400px;
+    line-height: 90px;
+} 
+
+.Featured {
+   
+    background-color: #F7F9FC;
+   padding: 100px 0;
+
+}
+.Featured h1 , .recent h1 , .Explore h1{
+    /*  text-align: center; 
+    padding-top: 30px; */
+        
+    width: max-content;
+    margin: 0 auto;
+    font-size: 2.5rem;
+    color: #2d3954;
+    
+    }
+ .container{
+  
+    display: flex;
+    max-width: 1230px;
+    padding: 50px;
+    margin: 0 auto;
+    justify-content:center;
+    margin-top: 50px;
+    gap: 30px;
+   flex-wrap: wrap;
+  
+}
+
+.Featured .container .card{
+    width: 190px;
+    height: 165px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    box-shadow: 10px 10px 10px #EEF1F5, -10px -10px 10px #EEF1F5;
+  
+   
+ }
+
+ .Featured img{
+    width: 40px;
+
+
+ }
+ .Featured h2{
+    font-size: 15px;
+    padding-top: 15px;
+ }
+ .recent {
+    padding-top: 75px;
+
+ }
+ .recent .container{
+    gap: 50px;
+ }
+ .recent .container .card{
+    width: 280px;
+    height: 330;
+   
+    box-shadow: 10px 10px 10px #F7F8F9, -10px -10px 10px #F7F8F9;
+    
+
+
+}
+.recent .card img{
+    width: 100%;
+}
+.recent .card h2{
+    font-size: 15px;
+    margin: 20px 20px 10px 20px;
+
+}
+.recent .card .end{
+    border-top: 1px solid #E4E8F3;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.recent .card .price{
+    background-color: #27AE60;
+    border-radius: 25px;
+    padding: 10px;
+    color: white;
+    font-size: 13px;
+
+}
+.recent .card .sq{
+    color: #555;
+    font-size: 13px;
+    padding-left: 3px;
+}
+.Explore{
+    padding:100px 0px;
+}
+.Explore .container{
+   
+    gap: 40px;
+}
+
+.Explore .card {
+    width: 350px;
+   
+    position: relative;
+
+    
+}
+.Explore .card img{
+    width: 100%;
+    border-radius: 5px;
+}
+.Explore .card h2{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(183, 186, 192, 0.25);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    border-radius: 5px;
+    color: white;
+    font-size: 15px;
+}
+
+footer{
+    background-color: #1D2636;
+    height: 65px;
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@media  screen and (max-width:992px) {
+    nav ul{
+        display: none;
+    }
+    nav .menu{
+        display: block;
+    }
+    nav .sign{
+        width: 10.6149vw;
+        min-width: 72px;
+    }
+    nav img{
+        width: 100px;
+    }
+    html{
+        font-size: 10px;
+    }
+}
